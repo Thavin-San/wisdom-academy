@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisdom Academy - Gallery</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7fb; color: #22303f; line-height: 1.6; }
+
+  header {
+    background-color: #123c69;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .logo-area { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #f2a20c;
+    color: #123c69;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  .site-title { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+  nav ul { list-style: none; display: flex; gap: 25px; }
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover { background-color: #f2a20c; color: #123c69; }
+
+  .page-heading {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+    color: #123c69;
+  }
+  .page-heading p { color: #4a5c6f; }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 60px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+
+  footer {
+    background-color: #123c69;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+  }
+  footer p { margin: 4px 0; font-size: 14px; }
+
+  @media (max-width: 900px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo">WA</div>
+    <div class="site-title">Wisdom Academy</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="table.html">Student Grades</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-heading">
+  <h1>Photo Gallery</h1>
+  <p>A glimpse into student life, events, and activities at our academy.</p>
+</div>
+
+<div class="gallery-grid">
+  <img src="images/gallery/gallery (1).jpeg" alt="Gallery Image 1">
+  <img src="images/gallery/gallery (1).jpg" alt="Gallery Image 2">
+  <img src="images/gallery/gallery (1).png" alt="Gallery Image 3">
+  <img src="images/gallery/gallery (2).jpeg" alt="Gallery Image 4">
+  <img src="images/gallery/gallery (2).jpg" alt="Gallery Image 5">
+  <img src="images/gallery/gallery (2).png" alt="Gallery Image 6">
+  <img src="images/gallery/gallery (3).jpeg" alt="Gallery Image 7">
+  <img src="images/gallery/gallery (3).jpg" alt="Gallery Image 8">
+  <img src="images/gallery/gallery (4).jpeg" alt="Gallery Image 9">
+  <img src="images/gallery/gallery (4).jpg" alt="Gallery Image 10">
+  <img src="images/gallery/gallery (5).jpeg" alt="Gallery Image 11">
+  <img src="images/gallery/gallery (5).jpg" alt="Gallery Image 12">
+</div>
+
+<footer>
+  <p>&copy; 2026 Wisdom Academy. All Rights Reserved.</p>
+  <p>Created by: San Thavin</p>
+</footer>
+
+</body>
+</html>

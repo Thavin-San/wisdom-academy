@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisdom Academy - Student Grades</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7fb; color: #22303f; line-height: 1.6; }
+
+  header {
+    background-color: #123c69;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .logo-area { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #f2a20c;
+    color: #123c69;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  .site-title { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+  nav ul { list-style: none; display: flex; gap: 25px; }
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover { background-color: #f2a20c; color: #123c69; }
+
+  .page-heading {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+    color: #123c69;
+  }
+  .page-heading p { color: #4a5c6f; }
+
+  .table-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 60px 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  thead th {
+    background-color: #123c69;
+    color: #ffffff;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  tbody td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #dce3ea;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #eef3f9;
+  }
+
+  tbody tr:hover {
+    background-color: #fdecc8;
+    transition: background-color 0.3s ease;
+  }
+
+  footer {
+    background-color: #123c69;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+  }
+  footer p { margin: 4px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo">WA</div>
+    <div class="site-title">Wisdom Academy</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="table.html">Student Grades</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-heading">
+  <h1>Student Grade Report</h1>
+  <p>HTML &amp; CSS course results overview.</p>
+</div>
+
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Student Name</th>
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>Total</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>John</td>
+        <td>90</td>
+        <td>95</td>
+        <td>185</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Mary</td>
+        <td>85</td>
+        <td>80</td>
+        <td>165</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>David</td>
+        <td>70</td>
+        <td>75</td>
+        <td>145</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>Linda</td>
+        <td>88</td>
+        <td>90</td>
+        <td>178</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>Peter</td>
+        <td>78</td>
+        <td>82</td>
+        <td>160</td>
+        <td>B</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>&copy; 2026 Wisdom Academy. All Rights Reserved.</p>
+  <p>Created by: San Thavin</p>
+</footer>
+
+</body>
+</html>

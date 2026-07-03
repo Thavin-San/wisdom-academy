@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisdom Academy - Contact Us</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7fb; color: #22303f; line-height: 1.6; }
+
+  header {
+    background-color: #123c69;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .logo-area { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #f2a20c;
+    color: #123c69;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  .site-title { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+  nav ul { list-style: none; display: flex; gap: 25px; }
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover { background-color: #f2a20c; color: #123c69; }
+
+  .page-heading {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+    color: #123c69;
+  }
+  .page-heading p { color: #4a5c6f; }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 60px;
+    justify-content: center;
+  }
+
+  .contact-info, .contact-form-box {
+    background-color: #ffffff;
+    border: 1px solid #dce3ea;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    padding: 30px 35px;
+    flex: 1;
+    min-width: 320px;
+  }
+
+  .contact-info h2, .contact-form-box h2 {
+    color: #123c69;
+    margin-bottom: 20px;
+  }
+
+  .contact-info p {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  .contact-info strong {
+    color: #123c69;
+  }
+
+  .contact-form-box .form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-box label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #123c69;
+  }
+
+  .contact-form-box input,
+  .contact-form-box textarea {
+    padding: 10px 12px;
+    border: 1px solid #c7d1db;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .contact-form-box input:focus,
+  .contact-form-box textarea:focus {
+    border-color: #123c69;
+  }
+
+  .contact-form-box textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .btn-send {
+    background-color: #123c69;
+    color: #ffffff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-send:hover { background-color: #f2a20c; color: #123c69; }
+
+  .map-section {
+    padding: 10px 60px 40px 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .map-placeholder {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    background-color: #dce3ea;
+    border: 2px dashed #123c69;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #123c69;
+  }
+
+  footer {
+    background-color: #123c69;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+  }
+  footer .social-links {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer .social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 14px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  footer .social-links a:hover {
+    background-color: #f2a20c;
+    color: #123c69;
+    border-color: #f2a20c;
+  }
+  footer p { margin: 4px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo">WA</div>
+    <div class="site-title">Wisdom Academy</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="table.html">Student Grades</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-heading">
+  <h1>Contact Us</h1>
+  <p>We'd love to hear from you. Reach out with any questions.</p>
+</div>
+
+<div class="contact-container">
+
+  <div class="contact-info">
+    <h2>Get In Touch</h2>
+    <p><strong>Address:</strong> Phnom Penh, Cambodia</p>
+    <p><strong>Phone:</strong> +855 12 345 678</p>
+    <p><strong>Email:</strong> info@wisdomacademy.edu</p>
+    <p><strong>Working Hours:</strong> Mon - Fri: 8:00 AM - 6:00 PM</p>
+  </div>
+
+  <div class="contact-form-box">
+    <h2>Send a Message</h2>
+    <form>
+      <div class="form-group">
+        <label for="cname">Name</label>
+        <input type="text" id="cname" name="cname" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="cemail">Email</label>
+        <input type="email" id="cemail" name="cemail" placeholder="Your email" required>
+      </div>
+      <div class="form-group">
+        <label for="csubject">Subject</label>
+        <input type="text" id="csubject" name="csubject" placeholder="Subject" required>
+      </div>
+      <div class="form-group">
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" name="cmessage" placeholder="Write your message here"></textarea>
+      </div>
+      <button type="submit" class="btn-send">Send Message</button>
+    </form>
+  </div>
+
+</div>
+
+<div class="map-section">
+  <div class="map-placeholder">Google Map</div>
+</div>
+
+<footer>
+  <div class="social-links">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+  </div>
+  <p>&copy; 2026 Wisdom Academy. All Rights Reserved.</p>
+  <p>Created by: San Thavin</p>
+</footer>
+
+</body>
+</html>

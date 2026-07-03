@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisdom Academy - Home</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7fb; color: #22303f; line-height: 1.6; }
+
+  header {
+    background-color: #123c69;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .logo-area { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #f2a20c;
+    color: #123c69;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  .site-title { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover {
+    background-color: #f2a20c;
+    color: #123c69;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1b5a90, #123c69);
+    color: #ffffff;
+  }
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #e0e8f0;
+  }
+  .btn-start {
+    background-color: #f2a20c;
+    color: #123c69;
+    border: none;
+    padding: 14px 34px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .btn-start:hover {
+    background-color: #ffffff;
+    color: #123c69;
+    transform: translateY(-3px);
+  }
+
+  .about {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #dce3ea;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  .about h2 {
+    color: #123c69;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .about p {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  footer {
+    background-color: #123c69;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+  }
+  footer p { margin: 4px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo">WA</div>
+    <div class="site-title">Wisdom Academy</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="table.html">Student Grades</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Welcome to Wisdom Academy</h1>
+  <p>Empowering students with quality education, skilled instructors, and a supportive learning environment to help you achieve your goals.</p>
+  <button class="btn-start" onclick="window.location.href='courses.html'">Start Learning</button>
+</section>
+
+<section class="about">
+  <h2>About Our Academy</h2>
+  <p>Wisdom Academy has been dedicated to providing top-quality education for over a decade. We offer a wide range of courses designed to help students build strong foundations in technology, arts, and sciences. Our experienced instructors use modern teaching methods to make learning engaging, practical, and effective for every student.</p>
+  <p>We believe that education is the key to unlocking potential. Our mission is to create a nurturing and inspiring environment where students can grow academically and personally. With state-of-the-art facilities and a passionate community, Wisdom Academy strives to shape the leaders and innovators of tomorrow.</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Wisdom Academy. All Rights Reserved.</p>
+  <p>Created by: San Thavin</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisdom Academy - Courses</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7fb; color: #22303f; line-height: 1.6; }
+
+  header {
+    background-color: #123c69;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .logo-area { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #f2a20c;
+    color: #123c69;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  .site-title { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+  nav ul { list-style: none; display: flex; gap: 25px; }
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover { background-color: #f2a20c; color: #123c69; }
+
+  .page-heading {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+    color: #123c69;
+  }
+  .page-heading p { color: #4a5c6f; }
+
+  .courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 50px;
+  }
+
+  .course-card {
+    background-color: #ffffff;
+    width: 300px;
+    border: 1px solid #dce3ea;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+  }
+  .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 18px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body h3 {
+    color: #123c69;
+    margin-bottom: 10px;
+  }
+  .card-body p {
+    font-size: 14px;
+    color: #4a5c6f;
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f2a20c;
+    margin-bottom: 15px;
+  }
+  .btn-register {
+    background-color: #123c69;
+    color: #ffffff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  .btn-register:hover { background-color: #f2a20c; color: #123c69; }
+
+  footer {
+    background-color: #123c69;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+  }
+  footer p { margin: 4px 0; font-size: 14px; }
+
+  @media (max-width: 1000px) {
+    .courses-container { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo">WA</div>
+    <div class="site-title">Wisdom Academy</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="table.html">Student Grades</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-heading">
+  <h1>Our Courses</h1>
+  <p>Choose from our wide range of professionally designed courses.</p>
+</div>
+
+<div class="courses-container">
+
+  <div class="course-card">
+    <img src="images/courses/001.jpg" alt="Web Development">
+    <div class="card-body">
+      <h3>Web Development</h3>
+      <p>Learn HTML, CSS, and JavaScript to build modern, responsive websites from scratch.</p>
+      <div class="price">$120</div>
+      <button class="btn-register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+
+  <div class="course-card">
+    <img src="images/courses/002.jpg" alt="Graphic Design">
+    <div class="card-body">
+      <h3>Graphic Design</h3>
+      <p>Master the tools and principles of visual design, branding, and digital illustration.</p>
+      <div class="price">$100</div>
+      <button class="btn-register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+
+  <div class="course-card">
+    <img src="images/courses/003.jpg" alt="Data Science">
+    <div class="card-body">
+      <h3>Data Science</h3>
+      <p>Explore data analysis, visualization, and machine learning fundamentals.</p>
+      <div class="price">$150</div>
+      <button class="btn-register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+
+  <div class="course-card">
+    <img src="images/courses/004.jpeg" alt="Business English">
+    <div class="card-body">
+      <h3>Business English</h3>
+      <p>Improve your professional communication skills for the modern workplace.</p>
+      <div class="price">$90</div>
+      <button class="btn-register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+
+  <div class="course-card">
+    <img src="images/courses/005.avif" alt="Photography">
+    <div class="card-body">
+      <h3>Photography</h3>
+      <p>Learn composition, lighting, and editing techniques to capture stunning photos.</p>
+      <div class="price">$110</div>
+      <button class="btn-register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+
+  <div class="course-card">
+    <img src="images/courses/006.jpeg" alt="Mobile App Development">
+    <div class="card-body">
+      <h3>Mobile App Development</h3>
+      <p>Build cross-platform mobile applications using modern frameworks and tools.</p>
+      <div class="price">$140</div>
+      <button class="btn-register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Wisdom Academy. All Rights Reserved.</p>
+  <p>Created by: San Thavin</p>
+</footer>
+
+</body>
+</html>
